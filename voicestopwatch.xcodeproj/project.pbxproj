@@ -16,6 +16,11 @@
 		BA7F3B841D3F0B6D001B4893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7F3B821D3F0B6D001B4893 /* LaunchScreen.storyboard */; };
 		BA7F3B8F1D3F0B6D001B4893 /* voicestopwatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F3B8E1D3F0B6D001B4893 /* voicestopwatchTests.m */; };
 		BA7F3B9A1D3F0B6D001B4893 /* voicestopwatchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F3B991D3F0B6D001B4893 /* voicestopwatchUITests.m */; };
+		BA7F3BAB1D3F0C0C001B4893 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA7F3BA81D3F0C0C001B4893 /* AcousticModelEnglish.bundle */; };
+		BA7F3BAC1D3F0C0C001B4893 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F3BA91D3F0C0C001B4893 /* OpenEars.framework */; };
+		BA7F3BAD1D3F0C0C001B4893 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F3BAA1D3F0C0C001B4893 /* Slt.framework */; };
+		BA7F3BB01D3F0C5B001B4893 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F3BAE1D3F0C5B001B4893 /* AudioToolbox.framework */; };
+		BA7F3BB11D3F0C5B001B4893 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F3BAF1D3F0C5B001B4893 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		BA7F3B951D3F0B6D001B4893 /* voicestopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voicestopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7F3B991D3F0B6D001B4893 /* voicestopwatchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = voicestopwatchUITests.m; sourceTree = "<group>"; };
 		BA7F3B9B1D3F0B6D001B4893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7F3BA81D3F0C0C001B4893 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		BA7F3BA91D3F0C0C001B4893 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		BA7F3BAA1D3F0C0C001B4893 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		BA7F3BAE1D3F0C5B001B4893 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA7F3BAF1D3F0C5B001B4893 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7F3BB01D3F0C5B001B4893 /* AudioToolbox.framework in Frameworks */,
+				BA7F3BB11D3F0C5B001B4893 /* AVFoundation.framework in Frameworks */,
+				BA7F3BAD1D3F0C0C001B4893 /* Slt.framework in Frameworks */,
+				BA7F3BAC1D3F0C0C001B4893 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,9 @@
 		BA7F3B651D3F0B6D001B4893 = {
 			isa = PBXGroup;
 			children = (
+				BA7F3BAE1D3F0C5B001B4893 /* AudioToolbox.framework */,
+				BA7F3BAF1D3F0C5B001B4893 /* AVFoundation.framework */,
+				BA7F3BA71D3F0C0C001B4893 /* Framework */,
 				BA7F3B701D3F0B6D001B4893 /* voicestopwatch */,
 				BA7F3B8D1D3F0B6D001B4893 /* voicestopwatchTests */,
 				BA7F3B981D3F0B6D001B4893 /* voicestopwatchUITests */,
@@ -141,6 +158,16 @@
 				BA7F3B9B1D3F0B6D001B4893 /* Info.plist */,
 			);
 			path = voicestopwatchUITests;
+			sourceTree = "<group>";
+		};
+		BA7F3BA71D3F0C0C001B4893 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F3BA81D3F0C0C001B4893 /* AcousticModelEnglish.bundle */,
+				BA7F3BA91D3F0C0C001B4893 /* OpenEars.framework */,
+				BA7F3BAA1D3F0C0C001B4893 /* Slt.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +232,13 @@
 		BA7F3B661D3F0B6D001B4893 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = junesiphone;
 				TargetAttributes = {
 					BA7F3B6D1D3F0B6D001B4893 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = PJ68SD7J5J;
+						ProvisioningStyle = Automatic;
 					};
 					BA7F3B891D3F0B6D001B4893 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -250,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7F3B841D3F0B6D001B4893 /* LaunchScreen.storyboard in Resources */,
+				BA7F3BAB1D3F0C0C001B4893 /* AcousticModelEnglish.bundle in Resources */,
 				BA7F3B811D3F0B6D001B4893 /* Assets.xcassets in Resources */,
 				BA7F3B7C1D3F0B6D001B4893 /* Main.storyboard in Resources */,
 			);
@@ -348,8 +377,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,8 +423,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -420,10 +453,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PJ68SD7J5J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = voicestopwatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junesiphone.voicestopwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -431,10 +473,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PJ68SD7J5J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = voicestopwatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junesiphone.voicestopwatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -503,6 +554,7 @@
 				BA7F3BA01D3F0B6D001B4893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA7F3BA11D3F0B6D001B4893 /* Build configuration list for PBXNativeTarget "voicestopwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +563,7 @@
 				BA7F3BA31D3F0B6D001B4893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA7F3BA41D3F0B6D001B4893 /* Build configuration list for PBXNativeTarget "voicestopwatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +572,7 @@
 				BA7F3BA61D3F0B6D001B4893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
